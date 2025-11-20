@@ -10,5 +10,7 @@ public class SampleTest extends BaseTest {
     public void testExample() {
         driver.findElement(By.cssSelector("input[name='name']")).sendKeys("Mani");
         System.out.println("Test executed successfully!");
+        System.out.println("Test executed successfully2!");
+        System.out.println("Test executed successfully3!");
     }
 }
