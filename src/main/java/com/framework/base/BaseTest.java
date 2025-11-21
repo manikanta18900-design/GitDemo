@@ -21,6 +21,13 @@ public class BaseTest {
     public void teardown() {
         if(driver != null) {
             driver.quit();
+            System.out.println("Hi Bro");
         }
     }
+    public void teardown2() {
+        if(driver != null) {
+            driver.quit();
+            System.out.println("Yaa Hi How are You?");
+        }
+        }
 }
