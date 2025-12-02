@@ -23,4 +23,17 @@ public class BaseTest {
             driver.quit();
         }
     }
+    @BeforeMethod
+    public void setup1() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("Hi u reached here one more time from the setup");
+    }
+    @AfterMethod
+    public void teardown1() {
+        if(driver != null) {
+            driver.quit();
+        }
+}
 }
