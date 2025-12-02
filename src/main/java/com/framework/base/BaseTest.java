@@ -36,4 +36,10 @@ public class BaseTest {
             driver.quit();
         }
 }
+    @AfterMethod
+    public void teardown11() {
+        if(driver != null) {
+            driver.quit();
+        }
+}
 }
